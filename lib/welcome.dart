@@ -75,7 +75,7 @@ class WelcomeScreen extends StatelessWidget {
                   number: '01',
                   title: 'Automated CI/CD with Codemagic',
                   subtitle:
-                      'Configuring build triggers, workflows, and code signing effortlessly and simple.',
+                      'Configuring build triggers, workflows, and code signing effortlessly.',
                 ),
                 const _AgendaItem(
                   number: '02',
