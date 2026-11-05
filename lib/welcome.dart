@@ -6,14 +6,15 @@ class WelcomeScreen extends StatelessWidget {
   void _showSessionDetails(BuildContext context) {
     showModalBottomSheet(
       context: context,
+      isScrollControlled: true,
       backgroundColor: const Color(0xFF131D31),
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
       ),
       builder: (ctx) {
         return SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 28),
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -273,7 +274,9 @@ class WelcomeScreen extends StatelessWidget {
                             ),
                             boxShadow: [
                               BoxShadow(
-                                color: const Color(0xFF4285F4).withValues(alpha: 0.35),
+                                color: const Color(
+                                  0xFF4285F4,
+                                ).withValues(alpha: 0.35),
                                 blurRadius: 10,
                                 offset: const Offset(0, 3),
                               ),
@@ -298,7 +301,9 @@ class WelcomeScreen extends StatelessWidget {
                                   vertical: 3,
                                 ),
                                 decoration: BoxDecoration(
-                                  color: const Color(0xFF4285F4).withValues(alpha: 0.15),
+                                  color: const Color(
+                                    0xFF4285F4,
+                                  ).withValues(alpha: 0.15),
                                   borderRadius: BorderRadius.circular(6),
                                 ),
                                 child: const Text(
@@ -360,7 +365,9 @@ class WelcomeScreen extends StatelessWidget {
                             Container(
                               padding: const EdgeInsets.all(7),
                               decoration: BoxDecoration(
-                                color: const Color(0xFF4285F4).withValues(alpha: 0.15),
+                                color: const Color(
+                                  0xFF4285F4,
+                                ).withValues(alpha: 0.15),
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: const Icon(
@@ -441,7 +448,9 @@ class WelcomeScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(16),
                         boxShadow: [
                           BoxShadow(
-                            color: const Color(0xFF4285F4).withValues(alpha: 0.35),
+                            color: const Color(
+                              0xFF4285F4,
+                            ).withValues(alpha: 0.35),
                             blurRadius: 14,
                             offset: const Offset(0, 5),
                           ),

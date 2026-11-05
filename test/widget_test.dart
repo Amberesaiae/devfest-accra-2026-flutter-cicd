@@ -32,7 +32,10 @@ void main() {
     expect(find.text('Automated CI/CD with Codemagic'), findsOneWidget);
 
     // Dismiss sheet
-    await tester.tap(find.text('Ready to Roll!'));
+    final dismissButtonFinder = find.text('Ready to Roll!');
+    await tester.ensureVisible(dismissButtonFinder);
+    await tester.pumpAndSettle();
+    await tester.tap(dismissButtonFinder);
     await tester.pumpAndSettle();
 
     expect(find.text('Session Agenda & Key Takeaways'), findsNothing);
