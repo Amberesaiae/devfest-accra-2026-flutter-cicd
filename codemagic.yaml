@@ -5,6 +5,9 @@ workflows:
     environment:
       flutter: stable
 
+    groups:
+      - firebase_credentials
+
     scripts:
       - name: Get Flutter packages
         script: |
@@ -24,3 +27,15 @@ workflows:
 
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
+
+    publishing:
+      firebase:
+        firebase_service_account: $FIREBASE_SERVICE_ACCOUNT
+
+        android:
+          app_id: 1:346528691909:android:a6bcaa14d0cab3f317a2ac
+
+          groups:
+            - devfest-testers
+
+          artifact_type: apk
