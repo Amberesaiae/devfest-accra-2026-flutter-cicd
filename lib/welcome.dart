@@ -175,7 +175,7 @@ class WelcomeScreen extends StatelessWidget {
               const SizedBox(height: 10),
 
               const Text(
-                "Let's build, learn, and ship something amazing and powerful together.",
+                "Let's build, learn, and ship something amazing together.",
                 style: TextStyle(
                   color: Color(0xFF475569),
                   fontSize: 15,
