@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:37016590381:android:28ac59579545b6891200a4",
+        "mobilesdk_app_id": "1:37016590381:android:5283d24c7e4293371200a4",
         "android_client_info": {
-          "package_name": "com.juliusboakye.devfest_accra_2026"
+          "package_name": "com.amberesaiae.devfest_accra_2026"
         }
       },
       "oauth_client": [],
